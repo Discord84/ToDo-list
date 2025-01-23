@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", serif;
+}
+
+body {
+    background: url(images/oshi-no-ko-anime-wallpaper.jpg) center/cover no-repeat;
+    height: 100vh;
+}
+
+.container {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+}
+
+h1 {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+}
+
+.todo {
+    background: rgba(255, 255, 255, 0.427);
+    padding: 15px;
+}
+
+span {
+    color: rgba(255, 255, 255, 0.377);
+}
+
+.button-delete {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.plus {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.todo-task-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    width: 80%;
+    padding: 10px;
+
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.task:nth-of-type(2n){
+    background-color: rgba(108, 106, 106, 0.331);;
+}
+
+.number {
+    margin-right: 15px;
+}
+
+.task-container {
+    height: 336px;
+    overflow-y: auto;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+@media (max-width: 660px){
+    .container{
+        width: 80%;
+        margin-top: 150px;
+    }
+    .task-container{
+        height: 250px;
+    }
+}
