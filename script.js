@@ -33,6 +33,7 @@ function addTask (){
             lock:false,
             value:input.value
         }) 
+        input.value=""
     } else{
         return null
     }
